@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="#B0C4DE"
+    android:focusable="false" >
+
+    <!--  -->
+
+     <Button 
+            android:id="@+id/newsbackbtn" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:layout_marginLeft="10dp"
+        	android:layout_marginTop="10dp"
+        	android:background="@drawable/newsback"
+        	android:layout_alignParentLeft="true"
+        />
+       <Button 
+            android:id="@+id/newsrefeshbtn" 
+        	android:layout_width="wrap_content" 
+       		android:layout_height="wrap_content" 
+        	android:layout_marginRight="10dp"
+        	android:layout_marginTop="10dp"
+        	android:background="@drawable/newsrefesh"
+        	android:layout_alignParentRight="true"
+        />
+
+     <TextView
+         android:id="@+id/newsTitlebasisTextView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/newsbackbtn"
+         android:layout_alignBottom="@+id/newsbackbtn"
+         android:layout_centerHorizontal="true"
+         android:gravity="center_horizontal"
+         android:text="News"
+         android:textSize="30px" />
+
+</RelativeLayout>

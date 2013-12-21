@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+    
+    <ScrollView 
+    		android:layout_width="fill_parent"
+    		android:layout_height="fill_parent"
+    		android:layout_above="@+id/titleBasisLinearLayout"
+    		android:scrollbarStyle="outsideOverlay" >
+        <LinearLayout
+            	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+            	android:orientation="vertical" >
+            	
+            <TextView
+        		    android:id="@+id/textView1"
+        		    android:layout_width="wrap_content"
+        		    android:layout_height="wrap_content"
+        		    android:layout_marginLeft="15dp"
+        		    android:layout_marginTop="20dp"
+        		    android:clickable="true"
+        		    android:scaleType="matrix"
+        		    android:textSize="8pt"
+        		    android:text="从下面的选项中选择背景图" />
+            <RelativeLayout
+            		    android:id="@+id/background_from_exit_image"      				    
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:layout_marginTop="1dp"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_single_item"
+            			android:tag="background_from_exit_image" >
+						
+            		    <ImageView
+        		        android:id="@+id/imageView1"
+        		        android:layout_width="wrap_content"
+        		        android:layout_height="wrap_content"
+        		        android:layout_centerVertical="true"
+        		        android:layout_alignParentLeft="true"
+        		        android:clickable="true"
+        		        android:scaleType="matrix"
+        		        android:src="@drawable/background_icon" />
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp"
+        					android:layout_toRightOf="@+id/imageView1" 
+        					android:text="选择背景图"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+      				
+            <RelativeLayout
+            		    android:id="@+id/background_from_photos"
+            		    android:layout_width="fill_parent"
+            		    android:layout_height="wrap_content"
+            		    android:layout_marginTop="30dp"
+            		    android:background="@drawable/preference_first_item"
+            		    android:clickable="true"
+            		    android:gravity="center_vertical"
+            		    android:tag="background_from_photos" >
+						
+            		    <ImageView
+        		        android:id="@+id/imageView2"
+        		        android:layout_width="wrap_content"
+        		        android:layout_height="wrap_content"
+        		        android:layout_centerVertical="true"
+        		        android:layout_alignParentLeft="true"
+        		        android:clickable="true"
+        		        android:scaleType="matrix"
+        		        android:src="@drawable/background_from_photos" />
+
+            		    <TextView
+            		        android:layout_width="wrap_content"
+            		        android:layout_height="wrap_content"
+            		        android:padding="8dp"
+            		        android:layout_toRightOf="@+id/imageView2"
+            		        android:text="从相册中选择"
+            		        android:textColor="#000"
+            		        android:textSize="17sp" />
+						
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" /> 
+					</RelativeLayout>
+      				
+            		<RelativeLayout
+            		    android:id="@+id/background_from_camera"
+            			android:layout_width="fill_parent"
+            			android:layout_height="wrap_content"
+            			android:gravity="center_vertical"
+            			android:clickable="true"
+            			android:background="@drawable/preference_last_item"
+            			android:tag="background_from_camera" >
+						 <ImageView
+        		        android:id="@+id/imageView3"
+        		        android:layout_width="wrap_content"
+        		        android:layout_height="wrap_content"
+        		        android:layout_centerVertical="true"
+        		        android:layout_alignParentLeft="true"
+        		        android:clickable="true"
+        		        android:scaleType="matrix"
+        		        android:src="@drawable/background_from_camera" />
+            		    
+            			<TextView
+        					android:layout_width="wrap_content" 
+        					android:layout_height="wrap_content"
+        					android:padding="8dp"
+        					android:layout_toRightOf="@+id/imageView3" 
+        					android:text="拍一张"
+        					android:textSize="17sp"		
+							android:textColor="#000" /> 
+						<ImageView
+            				android:layout_width="wrap_content"
+        					android:layout_height="wrap_content"        	     	
+        					android:scaleType="matrix"
+        					android:layout_centerVertical="true"
+        					android:layout_alignParentRight="true"
+        					android:src="@drawable/mm_submenu" />      					
+      				</RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+
+</LinearLayout>

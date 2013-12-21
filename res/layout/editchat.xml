@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aliceblue"
+    android:focusable="false" >
+
+    <include layout="@layout/titlechartedit" android:id="@+id/titlechartedit"/>
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/locationdata"
+        android:layout_below="@+id/titlechartedit"
+        android:layout_margin="15dp"
+        android:background="@color/aliceblue"
+        android:gravity="left" />
+
+    <TextView
+        android:id="@+id/locationdata"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footerbtn"
+        android:background="@color/whitesmoke"
+        android:textColor="@color/gray" />
+
+    <LinearLayout
+        android:id="@+id/footerbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/locationbtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btngroundcolor"
+            android:text="定位"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btngroundcolor" />
+
+        <Button
+            android:id="@+id/photobtn"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btngroundcolor"
+            android:text="添加图片"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

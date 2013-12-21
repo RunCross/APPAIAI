@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:focusable="false" >
+
+    <include
+        android:id="@+id/chattitle"
+        layout="@layout/titlechart" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footerbtn"
+        android:layout_below="@id/chattitle"
+        android:layout_gravity="center" >
+
+        <android.support.v4.view.PagerTitleStrip
+            android:id="@+id/pagertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="#6699cc"
+            android:textSize="12dp" />
+    </android.support.v4.view.ViewPager>
+    <!-- android:listSelector="@color/greenyellow" -->
+
+    <LinearLayout
+        android:id="@+id/footerbtn"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/bottom_button_comm"
+            android:text="@string/weibo" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/bottom_button_comm"
+            android:text="@string/news" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/bottom_button_selected"
+            android:text="@string/chat" />
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/bottom_button_comm"
+            android:text="@string/set" />
+    </LinearLayout>
+
+</RelativeLayout>

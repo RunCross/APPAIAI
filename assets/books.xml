@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+ <books>   
+   <book>   
+      <id>001</id>
+      <title>Harry Potter</title>   
+      <content>CSDN新首页已经正式上线! 欢迎大家多提建议。最热资讯曾经的IT神童,现在在忙什么? 一个创业失败者的自述:我如何搞砸了一款产品 招聘移动开发,老板必问的10个问题...</content>   
+   </book>   
+   <book>  
+       <id>002</id> 
+      <title>Learning XML</title>   
+      <content>Erik T. Ray这个样式啥都没有该 就改了最后的图片呼呼很简单吧关键要学会 怎么引用style</content>   
+   </book>   
+    <book>  
+        <id>003</id>> 
+      <title>JAVA</title>   
+      <content>PETER</content>   
+   </book> 
+   <book>  
+       <id>004</id> 
+      <title>THINKING IN JAVA</title>
+      <content>PETER OR</content>   
+   </book> 
+ </books>  

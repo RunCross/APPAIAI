@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.APP.aiainotice"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 加入在SDCard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:name="edu.ahjzu.app.notice.server.location.baiduLocation"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/title" >
+        <service android:name="edu.ahjzu.app.notice.service.ChatService" >
+            <intent-filter ><action android:name="com.aiai.chat.service"/></intent-filter>
+        </service>
+
+        <activity
+            android:name="edu.ahjzu.app.notice.view.InitActivity"
+            android:theme="@style/notitle" >
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <!--  -->
+        <activity
+            android:name="edu.ahjzu.app.notice.view.IndexActivity"
+            android:label="@string/app_name"
+            android:theme="@style/notitle" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.NewsActivity"
+            android:theme="@style/notitle" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.SetActivity"
+            android:theme="@style/notitle" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.LoginActivity"
+            android:theme="@style/notitle" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.ahjzu.app.notice.view.UsrInfoActivity" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.ChatActivity"
+            
+            android:theme="@style/notitle" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.RegeisterNameActivity"
+            android:theme="@style/notitle" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.ChatingActivity"
+            android:theme="@style/notitle"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.EditChatActivity"
+            android:theme="@style/notitle" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.RegisterActivity"
+            android:theme="@style/notitle" />
+        <!--
+         <activity 
+            android:name="Server.initAll">
+             <activity android:name="edu.ahjzu.app.notice.view.settingview.aboutActivity" />
+        </activity>
+        -->
+
+        <activity android:name="edu.ahjzu.app.notice.view.settingview.setSettingActivity" />
+        <activity android:name="edu.ahjzu.app.notice.view.settingview.backgroundActivity" />
+        <activity android:name="edu.ahjzu.app.notice.view.settingview.sharedActivity" />
+        <activity
+            android:name="edu.ahjzu.app.notice.view.settingview.moreSharedActivity"
+            android:theme="@style/MyDialogStyleTop" />
+        <activity android:name="edu.ahjzu.app.notice.view.settingview.OAuthV2ImplicitGrantActivity" />
+        <activity android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView" />
+        <activity android:name="edu.ahjzu.app.notice.view.settingview.WeiBoAPIV2Activity" />
+
+        <!-- android:theme="@style/registerDialog" -->
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:permission="android.permission.BAIDU_LOCATION_SERVICE"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.9" >
+                </action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="colleges">
+        <item>土木工程学院</item>
+        <item>建筑与规划学院</item>
+        <item>环境与能源工程学院</item>
+        <item>管理学院</item>
+        <item>电子与信息工程学院</item>
+        <item>材料与化学工程学院</item>
+        <item>数理系</item>
+        <item>外语系</item>
+        <item>艺术学院</item>
+        <item>机械与电气工程学院</item>
+        <item>法律与政治学院</item>
+        <item>继续教育学院</item>
+    </string-array>
+
+</resources>

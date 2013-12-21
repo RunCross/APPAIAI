@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RErelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="false"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/regeistertitle"
+        layout="@layout/regeistertitle" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/regeistertitle"
+        android:background="#eee"
+        android:scrollbarStyle="outsideOverlay" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/iconname"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/icon"
+                android:layout_centerHorizontal="true"
+                android:text="选择头像"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/iconname"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_preference_single_normal"
+                android:hint="密码 (必填)"
+                android:password="true"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/pwdagain"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/pwd"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_preference_single_normal"
+                android:hint="验证密码 (必填)"
+                android:password="true"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/pwdagain"
+                android:layout_marginTop="12dp"
+                android:background="#cdcdcd" />
+
+            <EditText
+                android:id="@+id/truename"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/imageView4"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_preference_single_normal"
+                android:hint="真实姓名（选填）"
+                android:singleLine="true" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/truename"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/women"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/radioGroup"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_preference_single_normal"
+                android:hint="年龄（选填）"
+                android:numeric="integer"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/age"
+                android:layout_marginTop="12dp"
+                android:background="#cdcdcd" />
+
+            <Spinner
+                android:id="@+id/college"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/imageView6"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_preference_single_normal" />
+
+            <EditText
+                android:id="@+id/specialty"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/college"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_preference_single_normal"
+                android:hint="专业 （选填）"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/specialty"
+                android:layout_marginTop="12dp"
+                android:background="#cdcdcd" />
+
+            <EditText
+                android:id="@+id/qq"
+                android:layout_width="fill_parent"
+                android:layout_height="38dp"
+                android:layout_below="@id/imageView7"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ic_preference_single_normal"
+                android:hint="QQ（选填）"
+                android:numeric="integer"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="#cdcdcd" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

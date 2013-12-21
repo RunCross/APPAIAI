@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="定位设置" />
+
+    <Preference
+        android:defaultValue="true"
+        android:key="location"
+        android:summary="GPS定位(室内可能无法定位)"
+        android:title="定位方式▼"/>
+
+    <PreferenceCategory android:title="新消息通知设置" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="shake"
+        android:summaryOn="收到新消息通知时振动"
+        android:summaryOff="收到新消息通知时不振动"
+        android:title="振动" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="voice"
+        android:summaryOn="收到新消息通知时播放铃声"
+        android:summaryOff="收到消息通知时不播放铃声"
+        android:title="铃声" />
+</PreferenceScreen>

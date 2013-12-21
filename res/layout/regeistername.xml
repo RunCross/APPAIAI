@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RErelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:padding="20dp" >
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="138dp"
+        android:background="@drawable/ic_preference_single_normal"
+        android:gravity="center"
+        android:hint="请输入昵称 "
+        android:singleLine="true"
+        android:textColor="#000000" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/submitbtn"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/name"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:background="@color/titleblue"
+        android:gravity="center"
+        android:text="校验昵称"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

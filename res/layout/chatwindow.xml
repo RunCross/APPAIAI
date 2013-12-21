@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f0f0e0" >
+
+    <include
+        android:id="@+id/cwtitle"
+        layout="@layout/chatwindowtitle" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000" >
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="发送" />
+
+        <EditText
+            android:id="@+id/et_sendmessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/btn_send"
+            android:singleLine="false"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:windowSoftInputMode="adjustPan" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/rl_bottom"
+        android:layout_below="@+id/cwtitle"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:scrollbars="none" />
+
+</RelativeLayout>

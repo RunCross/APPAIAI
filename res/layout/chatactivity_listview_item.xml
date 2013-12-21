@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stuRelativeLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="60dip" >
+
+    <!-- android:background="@drawable/item_bg" -->
+
+    <ImageView
+        android:id="@+id/receive_icon"
+        android:layout_width="60dip"
+        android:layout_height="60dip"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:id="@+id/receive_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dip"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/receive_status"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/receive_icon"
+        android:textColor="#666666"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/receive_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@+id/receive_icon"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+</RelativeLayout>

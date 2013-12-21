@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="#219ef7"
+    android:focusable="false" >
+
+    <ImageView
+        android:id="@+id/editbtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/chatedit" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/searchbtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/refreshbtn"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/search" />
+
+    <ImageView
+        android:id="@+id/refreshbtn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="14dp"
+        android:background="#00000000"
+        android:scaleType="centerInside"
+        android:src="@drawable/bnt_refresh" />
+
+</RelativeLayout>

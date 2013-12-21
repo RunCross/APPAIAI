@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#A9A9A9">
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_margin="30dp"
+    	android:background="@drawable/ic_preference_single_normal">
+	    <TextView 
+	        android:id="@+id/textResponse"
+	        android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:gravity="center_vertical|center_horizontal"
+    		android:text="发送给微博好友"
+    		android:textSize="10pt"/>
+	</RelativeLayout>
+</RelativeLayout>

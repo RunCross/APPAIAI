@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:focusable="false" >
+
+    <include
+        android:id="@+id/titlebasis"
+        layout="@layout/titlebasis" />
+
+        <ListView
+            android:id="@+id/newslist"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/footerbtn"
+            android:layout_below="@+id/titlebasis"
+            android:background="@drawable/listview_background"
+            android:cacheColorHint="#00000000"
+            android:divider="#cdcdcd"
+            android:dividerHeight="1px" >
+
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/footerbtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/bottom_button_comm"
+                android:text="@string/weibo" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/bottom_button_selected"
+                android:text="@string/news" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/bottom_button_comm"
+                android:text="@string/chat" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/bottom_button_comm"
+                android:text="@string/set" />
+        </LinearLayout>
+
+</RelativeLayout>
